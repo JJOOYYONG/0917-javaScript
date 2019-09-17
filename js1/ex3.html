@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<form action="" name="frm">
+	<input type="text" name="id">
+	<button type ="button" onclick="winopen()">창열기</button>
+	<button type ="button" onclick="winopen2()">창열기2</button>
+</form>
+	<script>
+	//브라우저 객체 모델
+	//window-location
+	//      -histoy
+	//		-document - image,anchor,link
+	//      -form - text password textarea
+	//            - chekcbox radio
+	//		-select
+	
+	//window.필드
+	//       window.opner
+	//window 메소드()
+	//       window.open()   self.open()    open()
+	//       window.close()  self.close()   close()
+	
+	//window - history : 방문정보 저장
+	//       - history.필드     length 객수
+	//       - histroy.메소드()
+	//       - histroy.back()뒤로  forward()앞으로
+	//       - go(-3) 뒤로 3만큼 이동
+	//       - go(2) 앞으로 2만큼 이동
+	
+	
+	
+	function winopen(){
+		window.open('ex2.html','','width=200,height=100,left=100,top=100,resizable=yes,scrollbars=yes,menubar=yes,titlebar=yes');
+	}
+	
+	function winopen2(){
+		var child =window.open('ex4.html','','width=300,height=300');
+		child.document.fm.id.value='입력하세요';
+	}
+	</script>
+
+
+
+
+
+
+</body>
+</html>
